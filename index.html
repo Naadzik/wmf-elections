@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/wmf-elections/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WMF Board Elections</title>
+    <script>
+      // Prevent flash of wrong theme
+      (function() {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch(e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/wmf-elections/assets/index-D1OGAvEg.js"></script>
+    <link rel="stylesheet" crossorigin href="/wmf-elections/assets/index-DOAwqQnz.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
